@@ -1,0 +1,33 @@
+<!--仿Android系统Launcher界面-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+           >
+<!--定义一个ViewSwithcer组件-->
+<ViewSwitcher android:id="@+id/viewSwitcher"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"/>
+    <!--定义滚动到上一屏的按钮-->
+<Button
+    android:onClick="onClick"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/button_prev"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:textSize="60px"
+    android:text="&lt;"
+    />
+    <!--定义滚动到下一屏的按钮-->
+    <Button
+        android:onClick="onClick"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="60px"
+        android:text="&gt;"
+        />
+</RelativeLayout>
